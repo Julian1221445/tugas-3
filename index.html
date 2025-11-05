@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa Berprestasi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        thead {
+            background-color: #133f72;
+            color: white;
+        }
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tbody tr:hover {
+            background-color: #e8f5e9;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Daftar Mahasiswa Berprestasi Universitas Nusantara 2025</h1>
+    <table style="margin: auto; border-collapse: collapse; border: 1px solid #000;">
+<caption>
+    <b>Data Mahasiswa Berprestasi</b>
+</caption>
+<!-- caption untuk membuat judul diatas tabel -->
+ <!--  -->
+<!-- b untuk judul diatas tabel -->
+<thead>
+    <tr>
+        <th scope="col">no</th>
+        <th scope="col" colspan="2">Nama Mahasiswa</th>
+        <th scope="col">Program Studi</th>
+        <th scope="col">IPK</th>
+        <th scope="col">Prestasi</th>
+        <th scope="col">Tahun</th>
+    </tr>
+</thead>
+<!-- thead adalah tempat judul didalam tabel -->
+ <!-- colspan untuk menggabungkan dua tabel atau lebih ke arah samping -->
+  <!-- tbody untuk membuat isi data utama didalam tabel -->
+   <!-- th untuk membuat kotak yang isinya judul untuk kolom ditabel -->
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Stephen</td>
+        <td>Sanchez</td>
+        <td >Teknik Informatika</td>
+        <td rowspan="2">3.85</td>
+        <td>Juara 1 Lomba Coding Nasional</td>
+        <td>2024</td>
+    </tr>
+    <!-- rowspan untuk menggabungkan tabel ke arah bawah, sesuai keinginan mau berapa tabel -->
+     <!-- tr untuk satu baris ditabel -->
+      <!-- td isi tabel berupa kolom -->
+    <tr>
+        <td>2</td>
+        <td>Kerla</td>
+        <td>Ramadhan</td>
+        <td>Manajemen</td>
+        <td>Juara M Series Mobile Legend</td>
+        <td>2023</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Kairi</td>
+        <td>Kumar</td>
+        <td>Sistem Informasi</td>
+        <td>3.78</td>
+        <td>Juara 1 MSC</td>
+        <td>2024</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Hanzo</td>
+        <td>Sumedang</td>
+        <td>Bahasa Inggris</td>
+        <td>3.92</td>
+        <td>Juara Debat Bahasa Inggris Tingkat Nasional</td>
+        <td>2025</td>
+    </tr>
+    <tr><td>5</td>
+        <td>Alya</td>
+        <td>Putri</td>
+        <td>Desain Komunikasi Visual</td>
+        <td>3.88</td>
+        <td>Juara 1 Desain Poster Nasional</td>
+        <td>2024</td>   
+    </tr>
+        
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="7">Total Mahasiswa Berprestasi: 5</td>
+    </tr>
+</tfoot>
+<!-- tfoot untuk membuat bagian bawah tabel, biasanya untuk jumlah total -->
+    </table>
+    
+</body>
+</html>
